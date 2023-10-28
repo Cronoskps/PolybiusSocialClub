@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Polybius Social Club</title>
+    <link rel="Polybius Social Club Icon" href="./static/img/favicon.ico" type="image/x-icon">
+            <!-- Incluimos fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet">
+
+    <!-- Agregamos fontawesome -->
+    <script src="https://kit.fontawesome.com/5cfbcea823.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./static/css/style.css">
+</head>
+<body class="body-form">    
+    <header class="header">
+        <nav>
+            <div id="logo">
+                <a href="./index.html">
+                    <i class="fa-solid fa-gamepad fa-bounce" style="color: #125959;"></i>
+                    <span class="logo-text">
+                        - Polybius Social Club -
+                    </span>
+                    <i class="fa-solid fa-gamepad fa-bounce" style="color: #125959;"></i>
+                </a>
+            </div>
+            <ul class="nav-links" type="square">
+                <li>
+                    <a href="./index.html">
+                        Home
+                    </a>
+                </li>
+                <li><a href="./login.html">
+                    Iniciar sesion
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="form-container">
+            <!-- Creamos un formulario de registro -->
+            <form action="link" method="get" target="_blank">
+            <section class="formRegister">
+                <h4>FORMULARIO DE REGISTRO</h4>
+                <div>
+                    <input class="controls" type="text" maxlength="15" name="username" id="username" placeholder="Ingrese su nombre de usuario" required>
+                </div>
+                <div>
+                    <input class="controls" type="text" maxlength="25" name="name" id="name" placeholder="Ingrese su nombre">
+                </div>
+                <div>
+                    <input class="controls" type="email" name="email" id="email" placeholder="Ingrese su correo" required>
+                </div>
+                <div>
+                    <input class="controls" type="password" minlength="6" maxlength="15" name="pwd" id="pwd" placeholder="Ingrese su contraseña" required>
+                </div>
+                <div>
+                    <input class="controls" type="date" name="birthdate" id="birthdate" placeholder="Ingrese su cumpleaños">
+                </div>
+                <div>
+                    <label for="country">Pais de residencia</label>
+                    <select class="controls"  name="country" id="country">
+                        <option value="AR">Argentina</option>
+                        <option value="BR">Brasil</option>
+                        <option value="UY">Uruguay</option>
+                        <option value="PY">Paraguay</option>
+                        <option value="LED">Chile</option>
+                    </select>
+                </div>
+                <div>
+                    <p class="controls">
+                        Genero: 
+                        <input type="radio" name="gender" value="hombre" checked>Hombre 
+                        <input type="radio" name="gender" value="mujer">Mujer
+                        <input type="radio" name="gender" value="otro">Otro
+                    </p>
+                </div>
+                <div class="controls">
+                    <p>
+                        Consola/s favoritas: 
+                        <input type="checkbox" name="option" value="playstation">Playstation
+                        <input type="checkbox" name="option" value="xbox">Xbox
+                        <input type="checkbox" name="option" value="nintendoSwitch">Nintendo Switch
+                        <input type="checkbox" name="option" value="PC">PC
+                        <input type="checkbox" name="option" value="otra">Otra
+                    </p>
+                </div>
+                <div>
+                    <p>Estoy de acuerdo con <a href="#">Terminos y condiciones</a></p>
+                    <input class="button" type="submit" value="Registrar">
+                    <button class="button" type="reset">Reset</button>
+                    <p><a href="./login.html">Ya tengo una cuenta</a></p>
+                </div>
+         </section>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <a href="#">Términos y condiciones</a>
+        <a href="#">Preguntas frecuentes</a>
+        <a href="#">Ayuda</a>
+    </footer>
+</body>
+</html>

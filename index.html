@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polybius Social Club</title>
+    <link rel="Polybius Social Club Icon" href="./static/img/favicon.ico" type="image/x-icon">
+
+        <!-- Incluimos fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet">
+
+    <!-- Agregamos fontawesome -->
+    <script src="https://kit.fontawesome.com/5cfbcea823.js" crossorigin="anonymous"></script>
+
+    <!-- Agregamos CSS -->
+    <link rel="stylesheet" href="./static/css/style.css">
+</head>
+
+<body class="body-index"> 
+    <header class="header">
+        <nav>
+            <div id="logo">
+                <a href="./index.html">
+                    <i class="fa-solid fa-gamepad fa-bounce" style="color: #125959;"></i>
+                    <span class="logo-text">
+                        - Polybius Social Club -
+                    </span>
+                    <i class="fa-solid fa-gamepad fa-bounce" style="color: #125959;"></i>
+                </a>
+            </div>
+            <ul class="nav-links" type="square">
+                <li>
+                    <a href="./index.html">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="./register.html" target="_blank" class="btn-poly">Registrarse</a>
+                </li>
+                <li>Iniciar sesion</li> <!-- CREAR UNA PAGINA PARA INICIAR SESION -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="banner">
+            <div class="container">
+                <h1>El portal mas completo para el gamer</h1>    
+            </div>
+        </section>
+        <section id="search" class="banner-css">
+            <h2>¿Qué juego estas buscando?</h2>
+            <input type="text" class="input-search" placeholder="Buscar juego...">
+        </section>
+        <section id="trend">
+            <h2>Las tendencias de hoy</h2>
+            <div id="trending-list" class="games-flex">
+                <div class="trending" id="game1">
+                <a href="./detail-game.html">
+                        <img src="./static/img/blasphemous2.png" alt="Blasphemous 2" class="game-item-img">
+                        <div>
+                            <p class="game-item-detail-title">Blasphemous 2</p>
+                            <p class="game-item-detail-subtitle">24/08/23 - 8.9 🎮</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="trending" id="game2">
+                    <a href="#">
+                        <img src="./static/img/MortalKombat1" alt="Mortal Kombat 1" class="game-item-img">
+                        <div>
+                            <p class="game-item-detail-title">Mortal Kombat 1</p>
+                            <p class="game-item-detail-subtitle">06/09/23 - 9.1 🎮</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="trending" id="game3">
+                    <a href="#">
+                        <img src="./static/img/ForzaMotorsport.png" alt="Forza Motorsport" class="game-item-img">
+                        <div>
+                            <p class="game-item-detail-title">Forza Motorsport</p>
+                            <p class="game-item-detail-subtitle">10/10/23 - 7.3 🎮</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="trending" id="game4">
+                    <a href="#">
+                        <img src="./static/img/BaldursGate3.png" alt="Baldur's gate 3" class="game-item-img">
+                        <div>
+                            <p class="game-item-detail-title">Baldur's gate 3</p>
+                            <p class="game-item-detail-subtitle">21/07/23 - 7.6 🎮</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="trending" id="game5">
+                    <a href="#">
+                        <img src="./static/img/FinalFantasyXVI.png" alt="Final fantasy XVI" class="game-item-img">
+                        <div>
+                            <p class="game-item-detail-title">Final fantasy XVI</p>
+                            <p class="game-item-detail-subtitle">22/06/23 - 5.9 🎮</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="trending" id="game6">
+                    <a href="#">
+                        <img src="./static/img/DiabloIV.png" alt="Diablo IV" class="game-item-img">
+                        <div>
+                            <p class="game-item-detail-title">Diablo IV</p>
+                            <p class="game-item-detail-subtitle">06/06/23 - 9.5 🎮</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- SECCION A CREAR -->
+        <!-- <section id="top-rated">
+            <div class="container">
+                <h2>Mejores juego del 2023</h2>
+            </div>
+        </section>   -->
+    </main>
+    <footer>
+        <a href="#">Términos y condiciones</a>
+        <a href="#">Preguntas frecuentes</a>
+        <a href="#">
+            <i class="fa-sharp fa-solid fa-circle-info" style="color: #1df2b6;"></i> <!-- ICONO QUE VA A LA SECCION AYUDA -->
+        </a>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Polybius Social Club</title>
+    <link rel="Polybius Social Club Icon" href="./static/img/favicon.ico" type="image/x-icon">
+            <!-- Incluimos fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet">
+
+    <!-- Agregamos fontawesome -->
+    <script src="https://kit.fontawesome.com/5cfbcea823.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./static/css/style.css">
+</head>
+<body class="body-form">    
+    <header class="header">
+        <nav>
+            <div id="logo">
+                <a href="./index.html">
+                    <i class="fa-solid fa-gamepad fa-bounce" style="color: #125959;"></i>
+                    <span class="logo-text">
+                        - Polybius Social Club -
+                    </span>
+                    <i class="fa-solid fa-gamepad fa-bounce" style="color: #125959;"></i>
+                </a>
+            </div>
+            <ul class="nav-links" type="square">
+                <li>
+                    <a href="./index.html">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="./register.html" target="_blank" class="btn-poly">Registrarse</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="form-container"><!-- Creamos un formulario de registro -->
+            <form action="link" method="get" target="_blank">
+            <section class="formRegister">
+                <h4>¿Ya tienes cuenta? Logueate 🥳🥳</h4>
+                <div>
+                    <input class="controls" type="text" maxlength="15" name="username" id="username" placeholder="Ingrese su nombre de usuario" required>
+                </div>
+                <div>
+                    <input class="controls" type="password" minlength="6" maxlength="15" name="pwd" id="pwd" placeholder="Ingrese su contraseña" required>
+                </div>
+                <div>
+                    <p><a href="#">Olvide mi contraseña😢</a></p>
+                    <input class="button" type="submit" value="Ingresar">
+                </div>
+            </section>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <a href="#">Términos y condiciones</a>
+        <a href="#">Preguntas frecuentes</a>
+        <a href="#">Ayuda</a>
+    </footer>
+</body>
+</html>

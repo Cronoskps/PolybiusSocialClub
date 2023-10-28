@@ -1,0 +1,248 @@
+:root{
+    --bg-color:#121726;
+    --primary-color:#125959;
+    --secondary-color: #24303c;
+    --tertiary-color: #18D9B5;
+    --alternative-color: #1DF2B6;
+}
+
+/* selector universal */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Bitter', serif;
+}
+
+/* Selector de etiqueta */
+h2 {
+    color: white;
+    font-size: 20px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 5px 50px;
+    height: 30px;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap:30px;
+}
+
+.body-index {
+    background-image: url(../img/FondoFullPage.png);
+    background-size: cover;
+    background-position: center;
+    /* background-color: black; */
+}
+
+.game-item-img {
+    max-width: 100%;
+}
+
+.body-form {
+    background-image: url(../img/FondoRegistro.jpg);
+}
+
+/* selector por clase */
+.header{
+    background-color: #18d9b5;
+    width: 100%;
+    position: fixed;
+    border: 3px solid black;
+    top: 0;
+}
+
+.container{
+    max-width: 1200px;    /*Limitado para pantallas de pc, el ancho*/
+    padding: 20px;
+    border: 5px solid saddlebrown; 
+    margin: 0 auto;
+}
+
+/* selector por ID */
+#banner{
+    background-image: url('../img/FondoBannerPSD.png');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    padding: 100px 0;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.formRegister {
+    width: 400px;
+    background-color: #24303c;
+    padding: 30px;
+    border-radius: 4px;
+    font-family: 'Bitter', serif;
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.formRegister h4 {
+    font: 22px;
+    margin-bottom: 20px;
+}
+
+.formRegister p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.formRegister a {
+    color: white;
+    text-decoration: none;
+
+}
+
+.formRegister a:hover {
+    color: darkblue;
+    font-weight: bold;
+    text-decoration: underline;
+    
+}
+
+.formRegister a:active {
+    color: hotpink;
+    text-decoration: underline;
+    
+}
+
+.formRegister .button {
+    width: 100%;
+    background: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.controls  {
+    width: 100%;
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+} 
+
+section{
+    /* background-color: #360202; */
+    background-color: var(--bg-color);
+}
+
+footer {
+    background-color: var(--tertiary-color);
+    text-align: center;
+    padding: 10px 0;
+    color: white;
+}
+
+
+#banner-game {
+    background-color: var(--primary-color); 
+    color: white;
+    padding: auto;
+}
+
+
+.games-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* DETAIL-MOVIE */
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.video-container {
+    width: 80%;
+    max-width: 800px;
+}
+
+.info-container {
+    background-color: var(--primary-color); 
+    color: white;
+    padding: auto;
+    width: 80%;
+    max-width: 400px;
+}
+
+.info-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* INDEX */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Bitter', serif;
+    background-color: var(--bg-color);
+}
+
+#banner h1 {
+    font-size: 36px;
+}
+
+/* Estilos para la sección de búsqueda */
+#search {
+    background-color: var(--primary-color);
+    padding: 20px;
+    text-align: center;
+}
+
+.input-search {
+    width: 80%;
+    padding: 10px;
+    font-size: 18px;
+}
+
+#trend {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    text-align: center;
+}
+
+.trending {
+    width: 300px;
+    margin: 10px;
+    background-color: white;
+    border: 1px solid var(--primary-color);
+    text-align: center;
+    padding: 10px;
+}
+
+.game-item-detail-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.game-item-detail-subtitle {
+    font-size: 16px;
+}
