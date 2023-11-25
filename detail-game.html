@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalle del Juego - Blasphemous 2</title>
-    <link rel="Polybius Social Club Icon" href="./static/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./static/img/favicon.ico" type="image/x-icon">
     <!-- Incluimos fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,16 +14,16 @@
 <script src="https://kit.fontawesome.com/5cfbcea823.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./static/css/style.css">
 </head>
-<body>
+<body class="body-index">
     <header class="header">
         <nav>
             <div id="logo">
                 <a href="./index.html">
-                    <i class="fa-solid fa-gamepad fa-bounce" style="color: #125959;"></i>
+                    <i class="fas fa-gamepad fa-bounce" style="color: black;"></i>
                     <span class="logo-text">
-                        - Polybius Social Club -
+                        &nbsp- Polybius Social Club -&nbsp
                     </span>
-                    <i class="fa-solid fa-gamepad fa-bounce" style="color: #125959;"></i>
+                    <i class="fas fa-gamepad fa-bounce" style="color: black;"></i>
                 </a>
             </div>
             <ul class="nav-links" type="square">
@@ -35,48 +35,93 @@
                 <li>
                     <a href="./register.html" target="_blank" class="btn-poly">Registrarse</a>
                 </li>
-                <li>Iniciar sesion</li> <!-- CREAR UNA PAGINA PARA INICIAR SESION -->
+                <a href="./login.html">
+                    Iniciar sesion
+                </a>
             </ul>
         </nav>
     </header>
     <main>
-        <section id="banner-game" class="centered">
+        <section id="banner-game" >
             <h1>Blasphemous 2</h1>
         </section>
-        <section id="more-info" class="centered">
+        <section class="centered">
             <div class="video-container">
-                <iframe width="560" height="315" 
+                <iframe width="1120" height="630" 
                 src="https://www.youtube.com/embed/czEWhp6BrJI"
                 title="Blasphemous 2" 
                 frameborder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                allowfullscreen></iframe>
+                allowfullscreen
+                loading="lazy"></iframe>
             </div>
-            <div class="info-container">
-                <table>
-                    <tbody>
-                        <tr>
-                            <td colspan="2" class="info-title">Información</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Status</strong></td>
-                            <td>Released</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Original Language</strong></td>
-                            <td>English</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Consoles</strong></td>
-                            <td>Playstation / PC / Nintendo Switch / XBOX</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Developer</strong></td>
-                            <td>The Game Kitchen</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+        </section>
+        <section class="info-container" >
+            <table>
+                <tbody>
+                    <tr>
+                        <td colspan="2" class="info-title">Información</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Estado actual</strong></td>
+                        <td>Lanzado</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Idioma original</strong></td>
+                        <td>Ingles</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Consolas</strong></td>
+                        <td>Playstation / PC / Nintendo Switch / XBOX</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Desarrollador</strong></td>
+                        <td>The Game Kitchen</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="game-more-info">
+            <section id="game-description" >
+                <h2>Descripción del Juego</h2>
+                <p>Blasphemous 2 es la emocionante continuación del aclamado juego original. El Penitente se despierta una vez más para librar una lucha sin fin contra el Milagro en Blasphemous 2.</p>
+            </section>
+            <section id="system-requirements" >
+                <h2>Requisitos del Sistema</h2>
+                <p><strong>Requisitos Mínimos:</strong> 
+                    <br>Requiere un procesador y un sistema operativo de 64 bits
+                    <br>SO: Windows 10
+                    <br>Procesador: Intel Core 2 Duo E8400 or AMD Phenom II X2 550
+                    <br>Memoria: 4 GB de RAM
+                    <br>Gráficos: NVIDIA GeForce GT 520, 1 GB or AMD Radeon HD 7470, 1 GB or Intel HD Graphics 4400
+                    <br>Almacenamiento: 4 GB de espacio disponible
+                </p><br>
+                <p><strong>Requisitos Recomendados:</strong>
+                    <br>Requiere un procesador y un sistema operativo de 64 bits
+                    <br>SO: Windows 10
+                    <br>Procesador: Intel Core i3-550 or AMD FX-4100
+                    <br>Memoria: 6 GB de RAM
+                    <br>Gráficos: NVIDIA GeForce GT 710, 1 GB or AMD Radeon R7 240, 1 GB or Intel HD Graphics 530
+                    <br>Almacenamiento: 4 GB de espacio disponible 
+                </p>
+            </section>
+            <section id="user-reviews" >
+                <h2>Opiniones de Usuarios</h2>
+                <div class="user-review">
+                    <p><strong>Nombre del Usuario:</strong> Gamesradar+</p>
+                    <p><strong>Calificación:</strong> ★★★★☆</p>
+                    <p><strong>Comentario:</strong> “exactly what a Metroidvania Soulslike sequel needs to be”
+                    </p>
+                </div>
+                <!-- Agrega más reseñas según sea necesario -->
+            </section>
+            <section id="related-links" >
+                <h2>Enlaces Relacionados</h2><br>
+                <ul>
+                    <li><a href="https://www.blasphemous2game.com" target="_blank">Sitio Web Oficial</a></li>
+                    <li></i><a href="https://forums.blasphemous2.com" target="_blank">Sitio de Steam </a></li>
+                </ul>
+            </section>                  
         </section>
     </main>
     <footer>

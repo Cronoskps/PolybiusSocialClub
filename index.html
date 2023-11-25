@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Polybius Social Club</title>
-    <link rel="Polybius Social Club Icon" href="./static/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./static/img/favicon.ico" type="image/x-icon">
 
         <!-- Incluimos fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,6 +16,7 @@
 
     <!-- Agregamos CSS -->
     <link rel="stylesheet" href="./static/css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 </head>
 
 <body class="body-index"> 
@@ -23,14 +24,14 @@
         <nav>
             <div id="logo">
                 <a href="./index.html">
-                    <i class="fa-solid fa-gamepad fa-bounce" style="color: #125959;"></i>
+                    <i class="fas fa-gamepad fa-bounce" style="color: black;"></i>
                     <span class="logo-text">
-                        - Polybius Social Club -
+                        &nbsp- Polybius Social Club -&nbsp
                     </span>
-                    <i class="fa-solid fa-gamepad fa-bounce" style="color: #125959;"></i>
+                    <i class="fas fa-gamepad fa-bounce" style="color: black;"></i>
                 </a>
             </div>
-            <ul class="nav-links" type="square">
+            <ul class="nav-links">
                 <li>
                     <a href="./index.html">
                         Home
@@ -39,7 +40,9 @@
                 <li>
                     <a href="./register.html" target="_blank" class="btn-poly">Registrarse</a>
                 </li>
-                <li>Iniciar sesion</li> <!-- CREAR UNA PAGINA PARA INICIAR SESION -->
+                <li>
+                    <a href="./login.html" target="_blank" class="btn-poly">Iniciar sesion</a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -51,13 +54,18 @@
         </section>
         <section id="search" class="banner-css">
             <h2>¿Qué juego estas buscando?</h2>
-            <input type="text" class="input-search" placeholder="Buscar juego...">
+            <div class="trans-search">
+                <input type="text" class="input-search" placeholder="Buscar juego...">
+                <div class="btn">
+                    <i class="fa fa-search"></i>
+                </div>
+            </div>
         </section>
         <section id="trend">
             <h2>Las tendencias de hoy</h2>
             <div id="trending-list" class="games-flex">
                 <div class="trending" id="game1">
-                <a href="./detail-game.html">
+                    <a href="./detail-game.html">
                         <img src="./static/img/blasphemous2.png" alt="Blasphemous 2" class="game-item-img">
                         <div>
                             <p class="game-item-detail-title">Blasphemous 2</p>
@@ -67,7 +75,7 @@
                 </div>
                 <div class="trending" id="game2">
                     <a href="#">
-                        <img src="./static/img/MortalKombat1" alt="Mortal Kombat 1" class="game-item-img">
+                        <img src="./static/img/MortalKombat1.png" alt="Mortal Kombat 1" class="game-item-img">
                         <div>
                             <p class="game-item-detail-title">Mortal Kombat 1</p>
                             <p class="game-item-detail-subtitle">06/09/23 - 9.1 🎮</p>
@@ -110,6 +118,42 @@
                         </div>
                     </a>
                 </div>
+                <div class="trending" id="game7">
+                    <a href="#">
+                        <img src="./static/img/AlanWake2.png" alt="Alan Wake" class="game-item-img">
+                        <div>
+                            <p class="game-item-detail-title">Alan Wake 2</p>
+                            <p class="game-item-detail-subtitle">27/10/23 - 9.9 🎮</p>
+                        </div>
+                    </a>
+                </div>                
+                <div class="trending" id="game8">
+                    <a href="#">
+                        <img src="./static/img/MarioWonder.jpg" alt="Super Mario Wonder" class="game-item-img">
+                        <div>
+                            <p class="game-item-detail-title">Super Mario Wonder</p>
+                            <p class="game-item-detail-subtitle">20/10/23 - 7.5 🎮</p>
+                        </div>
+                    </a>
+                </div>                
+                <div class="trending" id="game9">
+                    <a href="#">
+                        <img src="./static/img/Spiderman2.png" alt="Spiderman 2" class="game-item-img">
+                        <div>
+                            <p class="game-item-detail-title">Spiderman 2</p>
+                            <p class="game-item-detail-subtitle">20/10/23 - 8.3 🎮</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="trending" id="game10">
+                    <a href="#">
+                        <img src="./static/img/ResidentEvil4.png" alt="Resident Evil 4" class="game-item-img">
+                        <div>
+                            <p class="game-item-detail-title">Resident Evil 4</p>
+                            <p class="game-item-detail-subtitle">24/03/23 - 8.6 🎮</p>
+                        </div>
+                    </a>
+                </div>
             </div>
         </section>
         <!-- SECCION A CREAR -->
@@ -122,9 +166,7 @@
     <footer>
         <a href="#">Términos y condiciones</a>
         <a href="#">Preguntas frecuentes</a>
-        <a href="#">
-            <i class="fa-sharp fa-solid fa-circle-info" style="color: #1df2b6;"></i> <!-- ICONO QUE VA A LA SECCION AYUDA -->
-        </a>
+        <a href="#">Ayuda</a>
     </footer>
 </body>
 </html>

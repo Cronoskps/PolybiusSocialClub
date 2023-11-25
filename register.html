@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro - Polybius Social Club</title>
-    <link rel="Polybius Social Club Icon" href="./static/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./static/img/favicon.ico" type="image/x-icon">
             <!-- Incluimos fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,11 +19,11 @@
         <nav>
             <div id="logo">
                 <a href="./index.html">
-                    <i class="fa-solid fa-gamepad fa-bounce" style="color: #125959;"></i>
+                    <i class="fas fa-gamepad fa-bounce" style="color: black;"></i>
                     <span class="logo-text">
-                        - Polybius Social Club -
+                        &nbsp- Polybius Social Club -&nbsp
                     </span>
-                    <i class="fa-solid fa-gamepad fa-bounce" style="color: #125959;"></i>
+                    <i class="fas fa-gamepad fa-bounce" style="color: black;"></i>
                 </a>
             </div>
             <ul class="nav-links" type="square">
@@ -32,8 +32,10 @@
                         Home
                     </a>
                 </li>
-                <li><a href="./login.html">
+                <li>
+                    <a href="./login.html">
                     Iniciar sesion
+                    </a>
                 </li>
             </ul>
         </nav>
@@ -41,17 +43,19 @@
     <main>
         <div class="form-container">
             <!-- Creamos un formulario de registro -->
-            <form action="link" method="get" target="_blank">
+            <form action="#" method="post" target="_blank">
             <section class="formRegister">
                 <h4>FORMULARIO DE REGISTRO</h4>
                 <div>
-                    <input class="controls" type="text" maxlength="15" name="username" id="username" placeholder="Ingrese su nombre de usuario" required>
+                    <input class="controls username" type="text" maxlength="15" name="username" id="username" placeholder="Ingrese su nombre de usuario" required>
+                    <span id="username-error" class="error"></span>
                 </div>
                 <div>
                     <input class="controls" type="text" maxlength="25" name="name" id="name" placeholder="Ingrese su nombre">
                 </div>
                 <div>
-                    <input class="controls" type="email" name="email" id="email" placeholder="Ingrese su correo" required>
+                    <input class="controls email" type="email" name="email" id="email" placeholder="Ingrese su correo" required>
+                    <span id="email-error" class="error"></span>
                 </div>
                 <div>
                     <input class="controls" type="password" minlength="6" maxlength="15" name="pwd" id="pwd" placeholder="Ingrese su contraseña" required>
@@ -71,7 +75,7 @@
                 </div>
                 <div>
                     <p class="controls">
-                        Genero: 
+                        Genero:
                         <input type="radio" name="gender" value="hombre" checked>Hombre 
                         <input type="radio" name="gender" value="mujer">Mujer
                         <input type="radio" name="gender" value="otro">Otro
@@ -88,12 +92,12 @@
                     </p>
                 </div>
                 <div>
-                    <p>Estoy de acuerdo con <a href="#">Terminos y condiciones</a></p>
+                    <p>Estoy de acuerdo con <a href="#">Términos y condiciones</a> </p>
                     <input class="button" type="submit" value="Registrar">
                     <button class="button" type="reset">Reset</button>
                     <p><a href="./login.html">Ya tengo una cuenta</a></p>
                 </div>
-         </section>
+            </section>
             </form>
         </div>
     </main>
@@ -102,5 +106,6 @@
         <a href="#">Preguntas frecuentes</a>
         <a href="#">Ayuda</a>
     </footer>
+    <script src="./static/js/validatorRegister.js"></script>
 </body>
 </html>
